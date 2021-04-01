@@ -3,7 +3,7 @@ import { Container, Col, Row } from 'react-bootstrap'
 import boxsvg from '../Assets/box.svg'
 const StayInTrend = () => {
   return (
-    <div className='stay-in-trend-section'>
+    <div id='about' className='stay-in-trend-section'>
       <Container>
         {/* brown long box */}
         <div className='brown-long-box pt-5 pl-5'>

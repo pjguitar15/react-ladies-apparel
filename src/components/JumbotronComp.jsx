@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import img from '../Assets/front-page-lady.jpg'
+import { Link } from 'react-scroll'
 const JumbotronComp = () => {
   return (
     <div id='home' className='jumbotron-comp'>
@@ -20,7 +21,16 @@ const JumbotronComp = () => {
               dolorum animi totam dolorum animi totam dolorum animi totam
               dolorum.
             </p>
-            <button className='button-primary'>Shop Now</button>
+            <Link
+              activeClass='link-active'
+              to='apparel'
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              <div className='button-primary col-2 text-center'>Shop Now</div>
+            </Link>
           </Col>
           {/* Right Column */}
           <Col className='position-relative img-col' md='6' xs='12'>

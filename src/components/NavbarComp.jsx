@@ -19,7 +19,7 @@ const NavbarComp = () => {
           duration={500}
           style={{ cursor: 'pointer' }}
         >
-          <div className='mx-3'>Home</div>
+          <div className='mx-4'>Home</div>
         </Link>
 
         <Link
@@ -31,12 +31,19 @@ const NavbarComp = () => {
           duration={500}
           style={{ cursor: 'pointer' }}
         >
-          <div>Apparel</div>
+          <div className='mx-4'>Apparel</div>
         </Link>
-
-        <Navbar.Text className='mx-3'>
-          <a href='#login'>Contact</a>
-        </Navbar.Text>
+        <Link
+          activeClass='link-active'
+          to='about'
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          style={{ cursor: 'pointer' }}
+        >
+          <div className='mx-4'>About</div>
+        </Link>
       </Navbar.Collapse>
     </Navbar>
   )

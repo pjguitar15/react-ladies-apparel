@@ -16,7 +16,7 @@ const ProductList = ({ setShowModal }) => {
               {item.category}
             </div>
             <div>{item.name}</div>
-            <div>{item.price}</div>
+            <div>₱ {item.price}</div>
           </Col>
         ))}
       </Row>
