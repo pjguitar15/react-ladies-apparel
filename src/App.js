@@ -7,17 +7,19 @@ import Category from './components/Category.jsx'
 import ProductsWrapper from './components/Products/ProductsWrapper.jsx'
 import StayInTrend from './components/StayInTrend.jsx'
 import BigAdCard from './components/BigAdCard.jsx'
+import FooterComp from './components/FooterComp.jsx'
 
 const App = () => {
   return (
-    <div>
+    <>
       <NavbarComp />
       <JumbotronComp />
       <Category />
       <ProductsWrapper />
       <StayInTrend />
       <BigAdCard />
-    </div>
+      <FooterComp />
+    </>
   )
 }
 
