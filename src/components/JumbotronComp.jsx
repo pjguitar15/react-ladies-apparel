@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import img from '../Assets/front-page-lady.jpg'
 const JumbotronComp = () => {
   return (
-    <div className='jumbotron-comp'>
+    <div id='home' className='jumbotron-comp'>
       <Container>
         <Row>
           {/* Left Column */}

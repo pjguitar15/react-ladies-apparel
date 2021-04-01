@@ -2,13 +2,13 @@ import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 // import products
 import productsData from './ProductsData'
-const ProductList = () => {
+const ProductList = ({ setShowModal }) => {
   return (
     <div>
       <Row>
-        {/* Image Box */}
+        {/* Product Card */}
         {productsData.map((item, index) => (
-          <Col key={index} className='mb-5'>
+          <Col onClick={() => setShowModal(true)} key={index} className='mb-5'>
             <div className='img-box position-relative'>
               <img className='product-item-image' src={item.image} alt='test' />
             </div>

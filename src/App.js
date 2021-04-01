@@ -5,6 +5,7 @@ import NavbarComp from './components/NavbarComp.jsx'
 import JumbotronComp from './components/JumbotronComp.jsx'
 import Category from './components/Category.jsx'
 import ProductsWrapper from './components/Products/ProductsWrapper.jsx'
+import StayInTrend from './components/StayInTrend.jsx'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <JumbotronComp />
       <Category />
       <ProductsWrapper />
+      <StayInTrend />
     </div>
   )
 }
