@@ -20,12 +20,12 @@ const StayInTrend = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptatibus.
                 </p>
-                <a
+                <div
                   className='mt-5 read-more-link text-dark position-absolute'
                   href='#'
                 >
                   Read More
-                </a>
+                </div>
               </div>
             </Col>
             <Col className='p-4' md='4'>
@@ -36,12 +36,12 @@ const StayInTrend = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptatibus.
                 </p>
-                <a
+                <div
                   className='mt-5 read-more-link text-dark position-absolute'
                   href='#'
                 >
                   Read More
-                </a>
+                </div>
               </div>
             </Col>
             <Col className='p-4' md='4'>
@@ -52,12 +52,12 @@ const StayInTrend = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptatibus.
                 </p>
-                <a
+                <div
                   className='mt-5 read-more-link text-dark position-absolute'
                   href='#'
                 >
                   Read More
-                </a>
+                </div>
               </div>
             </Col>
           </Row>

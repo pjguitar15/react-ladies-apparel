@@ -8,14 +8,14 @@ const JumbotronComp = () => {
       <Container>
         <Row>
           {/* Left Column */}
-          <Col lg='6' xs='12'>
+          <Col className='text-center text-lg-left' lg='6' xs='12'>
             <h1
-              className='text-dark text-center text-lg-left font-weight-bold'
+              className='text-dark  font-weight-bold'
               style={{ marginTop: '10rem' }}
             >
               Winter 21'
             </h1>
-            <p className='text-center text-lg-left jumbo-paragraph col-lg-10 col-md-10 mx-md-auto mx-lg-0 col-12'>
+            <p className='jumbo-paragraph col-lg-10 col-md-10 mx-md-auto mx-lg-0 col-12'>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Consectetur, iste magni labore quae minus non error animi totam
               dolorum animi totam dolorum animi totam dolorum animi totam
@@ -29,9 +29,7 @@ const JumbotronComp = () => {
               offset={0}
               duration={500}
             >
-              <div className='button-primary mx-auto mx-lg-0 col-xl-2 col-lg-3 col-md-3 col-sm-3 col-3 text-center'>
-                Shop Now
-              </div>
+              <button className='button-primary mx-auto'>Shop Now</button>
             </Link>
           </Col>
           {/* Right Column */}

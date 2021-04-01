@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 // import products
 import productsData from './ProductsData'
-const ProductList = ({ setShowModal }) => {
+const ProductList = ({ onProductItemClick }) => {
   return (
     <Row>
       {/* Product Card */}
@@ -12,7 +12,7 @@ const ProductList = ({ setShowModal }) => {
           md='6'
           lg='4'
           xl='3'
-          onClick={() => setShowModal(true)}
+          onClick={() => onProductItemClick(item)}
           key={index}
           className='mb-5'
         >

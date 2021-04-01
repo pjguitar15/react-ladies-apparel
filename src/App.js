@@ -1,24 +1,20 @@
 import React from 'react'
-
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 // Components
 import NavbarComp from './components/NavbarComp.jsx'
-import JumbotronComp from './components/JumbotronComp.jsx'
-import Category from './components/Category.jsx'
-import ProductsWrapper from './components/Products/ProductsWrapper.jsx'
-import StayInTrend from './components/StayInTrend.jsx'
-import BigAdCard from './components/BigAdCard.jsx'
-import FooterComp from './components/FooterComp.jsx'
+import MainHomePage from './components/MainHomePage.jsx'
+import CartPage from './components/Cart/CartPage.jsx'
 
 const App = () => {
   return (
     <>
       <NavbarComp />
-      <JumbotronComp />
-      <Category />
-      <ProductsWrapper />
-      <StayInTrend />
-      <BigAdCard />
-      <FooterComp />
+      <Router>
+        <Switch>
+          <Route exact path='/' component={MainHomePage} />
+          <Route path='/cart' component={CartPage} />
+        </Switch>
+      </Router>
     </>
   )
 }

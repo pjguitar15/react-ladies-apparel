@@ -2,14 +2,14 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import winterjacket from '../Assets/winterjacket.jpg'
 import styled from 'styled-components'
+const AdCard = styled.div`
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+`
 const BigAdCard = () => {
-  const AdCard = styled.div`
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-  `
   return (
     <div className='py-5'>
       <Container>
