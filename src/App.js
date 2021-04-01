@@ -6,6 +6,7 @@ import JumbotronComp from './components/JumbotronComp.jsx'
 import Category from './components/Category.jsx'
 import ProductsWrapper from './components/Products/ProductsWrapper.jsx'
 import StayInTrend from './components/StayInTrend.jsx'
+import BigAdCard from './components/BigAdCard.jsx'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Category />
       <ProductsWrapper />
       <StayInTrend />
+      <BigAdCard />
     </div>
   )
 }

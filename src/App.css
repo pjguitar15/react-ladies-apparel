@@ -144,10 +144,20 @@ body {
 }
 .tri-box-item {
   margin-top: -4rem;
-  height: 14rem;
-  width: 16rem;
+  height: 16rem;
+  width: 19rem;
   z-index: 1;
   background: white;
+  padding: 1.5rem;
+  position: relative;
+}
+.box-svg {
+  height: 45px;
+}
+.read-more-link {
+  bottom: 20px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 /* Small devices (landscape phones, 576px and up) */

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
+import boxsvg from '../Assets/box.svg'
 const StayInTrend = () => {
   return (
     <div className='stay-in-trend-section'>
@@ -12,13 +13,52 @@ const StayInTrend = () => {
         <div className='tri-box-parent'>
           <Row>
             <Col className='p-4' md='4'>
-              <div className='mx-auto tri-box-item shadow-sm'>TEST</div>
+              <div className='mx-auto tri-box-item shadow-sm'>
+                <img className='box-svg' src={boxsvg} alt='boxicon' />
+                <h5 className='mt-4 mb-3'>Latest Styles</h5>
+                <p className='text-secondary' style={{ fontSize: '12px' }}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatibus.
+                </p>
+                <a
+                  className='mt-5 read-more-link text-dark position-absolute'
+                  href='#'
+                >
+                  Read More
+                </a>
+              </div>
             </Col>
             <Col className='p-4' md='4'>
-              <div className='mx-auto tri-box-item shadow-sm'>TEST</div>
+              <div className='mx-auto tri-box-item shadow-sm'>
+                <img className='box-svg' src={boxsvg} alt='boxicon' />
+                <h5 className='mt-4 mb-3'>Latest Styles</h5>
+                <p className='text-secondary' style={{ fontSize: '12px' }}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatibus.
+                </p>
+                <a
+                  className='mt-5 read-more-link text-dark position-absolute'
+                  href='#'
+                >
+                  Read More
+                </a>
+              </div>
             </Col>
             <Col className='p-4' md='4'>
-              <div className=' mx-auto tri-box-item shadow-sm'>TEST</div>
+              <div className='mx-auto tri-box-item shadow-sm'>
+                <img className='box-svg' src={boxsvg} alt='boxicon' />
+                <h5 className='mt-4 mb-3'>Latest Styles</h5>
+                <p className='text-secondary' style={{ fontSize: '12px' }}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatibus.
+                </p>
+                <a
+                  className='mt-5 read-more-link text-dark position-absolute'
+                  href='#'
+                >
+                  Read More
+                </a>
+              </div>
             </Col>
           </Row>
         </div>
