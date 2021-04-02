@@ -13,7 +13,7 @@ const Category = () => {
         </Col>
         <Col md='1' xs='4' className='px-3'>
           <div className='category-box active'>
-            <i class='fas fa-tshirt text-white'></i>
+            <i className='fas fa-tshirt text-white'></i>
           </div>
         </Col>
 

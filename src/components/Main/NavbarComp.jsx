@@ -13,12 +13,7 @@ const NavbarComp = () => {
       <Navbar.Toggle />
       <Navbar.Collapse className='justify-content-center'>
         {/* react-scroll to id */}
-        <RouterLink
-          to='/'
-          className='text-dark'
-          activeClass='link-active'
-          style={{ cursor: 'pointer' }}
-        >
+        <RouterLink to='/' className='text-dark' style={{ cursor: 'pointer' }}>
           <div className='mx-4'>Home</div>
         </RouterLink>
 
