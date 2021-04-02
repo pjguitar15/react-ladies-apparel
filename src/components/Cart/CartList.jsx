@@ -2,9 +2,10 @@ import React, { useContext } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Button } from '../StyledComponents/GlobalButtons.jsx'
 // import cart Data from Context
-import { CartItems } from '../ContextAPI/Context.jsx'
+import { CartItems, RemoveItemFromCart } from '../ContextAPI/Context.jsx'
 const CartList = () => {
   const [cartItems] = useContext(CartItems)
+  const removeFromCart = useContext(RemoveItemFromCart)
   return (
     <div className='bg-white w-100 py-3'>
       <Container>
@@ -33,7 +34,9 @@ const CartList = () => {
                 autem porro rerum sint, velit tempore, facere sapiente,
                 explicabo ipsam vero accusantium cumque voluptas.
               </p>
-              <Button secondary>Remove from Cart</Button>
+              <Button onClick={() => removeFromCart(item.id)} secondary>
+                Remove from Cart
+              </Button>
             </Col>
           </Row>
         ))}

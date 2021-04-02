@@ -1,11 +1,11 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import ProductList from './ProductList.jsx'
 import { Container } from 'react-bootstrap'
 import ModalComp from './ModalStyle.jsx'
 // import Context
-import { CurrModalItem } from '../ContextAPI/Context.jsx'
+import { CurrModalItem, SetModal } from '../ContextAPI/Context.jsx'
 const ProductsWrapper = () => {
-  const [showModal, setShowModal] = useState(false)
+  const [showModal, setShowModal] = useContext(SetModal)
   const [currModalItem, setCurrModalItem] = useContext(CurrModalItem)
 
   const onProductItemClick = (item) => {
