@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+
+// import Context
+import { AddToCart } from '../ContextAPI/Context.jsx'
+
 import { Button } from '../StyledComponents/GlobalButtons.jsx'
 import { CustomModal, ModalContent } from '../StyledComponents/CustomModal.jsx'
 const ModalStyle = ({ showModal, setShowModal, currModalItem }) => {
+  const addToCart = useContext(AddToCart)
   return (
     <CustomModal
       style={{ display: showModal ? 'block' : 'none' }}
@@ -34,16 +38,11 @@ const ModalStyle = ({ showModal, setShowModal, currModalItem }) => {
                 praesentium rem, necessitatibus ea laboriosam nemo?
               </p>
               <div className='mt-4'>
-                <Link to='/cart'>
-                  <Button secondary className='button-outline-dark mr-2'>
-                    Add to Cart
-                  </Button>
-                </Link>
-                <Button
-                  secondary
-                  onClick={() => setShowModal(false)}
-                  className='button-outline-dark'
-                >
+                <Button onClick={addToCart} secondary className='mr-2'>
+                  Add to Cart
+                </Button>
+
+                <Button secondary onClick={() => setShowModal(false)}>
                   Back to Shopping
                 </Button>
               </div>

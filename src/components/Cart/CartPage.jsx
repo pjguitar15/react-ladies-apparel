@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 import CartList from './CartList.jsx'
+import { Button } from '../StyledComponents/GlobalButtons.jsx'
 const CartPageComp = styled.div`
   height: 100vh;
   padding: 8rem 0;
@@ -13,7 +14,7 @@ const CartPage = () => {
     <CartPageComp>
       <Container>
         <Link to='/'>
-          <button className='button-outline-dark'>Back to Shop</button>
+          <Button secondary>Back to Shop</Button>
         </Link>
         <h2
           className='my-4 font-weight-bold'
@@ -21,7 +22,6 @@ const CartPage = () => {
         >
           Cart Items
         </h2>
-        
       </Container>
       <CartList />
     </CartPageComp>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import { Button } from './StyledComponents/GlobalButtons.jsx'
-import img from '../Assets/front-page-lady.jpg'
+import { Button } from '../StyledComponents/GlobalButtons.jsx'
+import img from '../../Assets/front-page-lady.jpg'
 import { Link } from 'react-scroll'
 const JumbotronComp = () => {
   return (

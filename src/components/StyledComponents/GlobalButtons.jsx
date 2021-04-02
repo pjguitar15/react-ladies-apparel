@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Button = styled.button`
-  padding: 8px 14px;
+  padding: ${(props) => (props.secondary ? '5px 14px' : '8px 14px')};
   font-size: 12px;
   background: ${(props) => (props.secondary ? 'none' : '#dfbd6d')};
   font-family: Open Sans;

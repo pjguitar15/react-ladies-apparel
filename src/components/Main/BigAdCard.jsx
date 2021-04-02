@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import winterjacket from '../Assets/winterjacket.jpg'
+import winterjacket from '../../Assets/winterjacket.jpg'
 import styled from 'styled-components'
-import { Button } from './StyledComponents/GlobalButtons.jsx'
+import { Button } from '../StyledComponents/GlobalButtons.jsx'
 const AdCard = styled.div`
   padding: 1rem;
   display: flex;

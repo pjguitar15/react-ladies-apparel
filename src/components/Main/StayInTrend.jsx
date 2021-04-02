@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
-import boxsvg from '../Assets/box.svg'
+import boxsvg from '../../Assets/box.svg'
 const StayInTrend = () => {
   return (
     <div id='about' className='stay-in-trend-section'>
