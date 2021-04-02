@@ -9,6 +9,9 @@ const CartList = () => {
   return (
     <div className='bg-white w-100 py-3'>
       <Container>
+        {cartItems.length < 1 && (
+          <h1 className='text-center text-secondary'>Cart Empty :(</h1>
+        )}
         {cartItems.map((item, index) => (
           <Row key={index} className='mb-3'>
             <Col md='3'>
