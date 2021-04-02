@@ -1,13 +1,15 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { Button } from '../StyledComponents/GlobalButtons.jsx'
+import { CustomModal, ModalContent } from '../StyledComponents/CustomModal.jsx'
 const ModalStyle = ({ showModal, setShowModal, currModalItem }) => {
   return (
-    <div
+    <CustomModal
       style={{ display: showModal ? 'block' : 'none' }}
-      className='custom-modal fixed-top'
+      className='fixed-top'
     >
-      <div className='custom-modal-content d-flex justify-content-center align-items-center'>
+      <ModalContent className='d-flex justify-content-center align-items-center'>
         <Container>
           <Row>
             <Col md='3'>
@@ -33,22 +35,23 @@ const ModalStyle = ({ showModal, setShowModal, currModalItem }) => {
               </p>
               <div className='mt-4'>
                 <Link to='/cart'>
-                  <button className='button-outline-dark mr-2'>
+                  <Button secondary className='button-outline-dark mr-2'>
                     Add to Cart
-                  </button>
+                  </Button>
                 </Link>
-                <button
+                <Button
+                  secondary
                   onClick={() => setShowModal(false)}
                   className='button-outline-dark'
                 >
                   Back to Shopping
-                </button>
+                </Button>
               </div>
             </Col>
           </Row>
         </Container>
-      </div>
-    </div>
+      </ModalContent>
+    </CustomModal>
   )
 }
 

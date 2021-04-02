@@ -2,6 +2,7 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import winterjacket from '../Assets/winterjacket.jpg'
 import styled from 'styled-components'
+import { Button } from './StyledComponents/GlobalButtons.jsx'
 const AdCard = styled.div`
   padding: 1rem;
   display: flex;
@@ -35,7 +36,9 @@ const BigAdCard = () => {
                 $100
               </span>
             </div>
-            <button className='button-outline-dark'>Shop Now</button>
+            <Button secondary className='button-outline-dark'>
+              Shop Now
+            </Button>
           </div>
 
           {/* Right Column */}

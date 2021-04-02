@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import { Button } from './StyledComponents/GlobalButtons.jsx'
 import img from '../Assets/front-page-lady.jpg'
 import { Link } from 'react-scroll'
 const JumbotronComp = () => {
@@ -29,7 +30,7 @@ const JumbotronComp = () => {
               offset={0}
               duration={500}
             >
-              <button className='button-primary mx-auto'>Shop Now</button>
+              <Button className='mx-auto'>Shop Now</Button>
             </Link>
           </Col>
           {/* Right Column */}
