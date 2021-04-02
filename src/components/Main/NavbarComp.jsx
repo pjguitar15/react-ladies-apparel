@@ -5,7 +5,17 @@ const NavbarComp = () => {
   return (
     <Navbar className='shadow-sm py-3 d-block fixed-top bg-white'>
       <Navbar.Brand className='ml-5 logo text-center'>
-        Libre Baskerville
+        <Link
+          activeClass='link-active'
+          to='home'
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          style={{ cursor: 'pointer' }}
+        >
+          Libre Baskerville
+        </Link>
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse className='justify-content-center'>
