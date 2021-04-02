@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 // import Context
 import { AddToCart } from '../ContextAPI/Context.jsx'
 
+// import styled components
 import { Button } from '../StyledComponents/GlobalButtons.jsx'
 import { CustomModal, ModalContent } from '../StyledComponents/CustomModal.jsx'
 const ModalStyle = ({ showModal, setShowModal, currModalItem }) => {

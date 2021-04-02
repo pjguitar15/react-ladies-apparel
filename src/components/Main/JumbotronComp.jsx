@@ -1,8 +1,9 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import { Button } from '../StyledComponents/GlobalButtons.jsx'
 import img from '../../Assets/front-page-lady.jpg'
 import { Link } from 'react-scroll'
+// import styled components
+import { Button } from '../StyledComponents/GlobalButtons.jsx'
 const JumbotronComp = () => {
   return (
     <div id='home' className='jumbotron-comp'>

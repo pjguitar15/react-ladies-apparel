@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+const Footer = styled.div`
+  padding: 3rem;
+  background: #f2ede2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 const FooterComp = () => {
-  const Footer = styled.div`
-    padding: 3rem;
-    background: #f2ede2;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  `
   return (
     <Footer>
       {/* Copyright */}
