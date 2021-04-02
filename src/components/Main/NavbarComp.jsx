@@ -1,36 +1,26 @@
 import React from 'react'
 import { Navbar } from 'react-bootstrap'
 import { Link } from 'react-scroll'
+import { Link as RouterLink } from 'react-router-dom'
 const NavbarComp = () => {
   return (
     <Navbar className='shadow-sm py-3 d-block fixed-top bg-white'>
       <Navbar.Brand className='ml-5 logo text-center'>
-        <Link
-          activeClass='link-active'
-          to='home'
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-          style={{ cursor: 'pointer' }}
-        >
+        <RouterLink className='text-dark' to='/' style={{ cursor: 'pointer' }}>
           Libre Baskerville
-        </Link>
+        </RouterLink>
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse className='justify-content-center'>
         {/* react-scroll to id */}
-        <Link
+        <RouterLink
+          to='/'
+          className='text-dark'
           activeClass='link-active'
-          to='home'
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
           style={{ cursor: 'pointer' }}
         >
           <div className='mx-4'>Home</div>
-        </Link>
+        </RouterLink>
 
         <Link
           activeClass='link-active'
